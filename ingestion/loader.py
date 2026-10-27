@@ -5,7 +5,7 @@ def loader(directory):
     for path in Path(directory).glob("*.pdf"):
         reader = PdfReader(path)
         for page_n,page in enumerate(reader.pages,start=1):
-            text = page.extract_text() or " "
+            text = page.extract_text(extraction_mode= "layout") or " "
             if text.strip():
                 documents.append({
                 "text" : text,
