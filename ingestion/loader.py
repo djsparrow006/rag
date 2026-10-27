@@ -9,8 +9,8 @@ def loader(directory):
             if text.strip():
                 documents.append({
                 "text" : text,
-		"page_number" : page_n,
-		"page" : path.name
+		        "source" : page_n,
+		        "page" : path.name
 })
     return documents
 

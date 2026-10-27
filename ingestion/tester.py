@@ -1,6 +1,6 @@
 from loader import loader
 
-documents = loader("documents")
+documents = loader("/home/blackpearl-/rag/documents")
 
 print("Pages loaded:", len(documents))
 
